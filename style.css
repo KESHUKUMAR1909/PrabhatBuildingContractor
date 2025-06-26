@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+}
+
+/* Styling Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fdfcfc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .content-provides ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 20px;
+}
+
+.quote-btn button {
+    border: 2px solid #FF6B35;
+    background-color: #FF6B35;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Styling Banner */
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        /* gradient overlay */
+        url('./downloaded_images/img9.png');
+    /* background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Left content */
+.left-side {
+    max-width: 600px;
+    z-index: 1;
+}
+
+.left-side h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-1,
+.btn-2 {
+    padding: 12px 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-1 {
+    background: #ff6b35;
+    color: white;
+}
+
+.btn-2 {
+    background: white;
+    color: black;
+}
+
+
+
+/* Styling the Services Section */
+.services {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5rem;
+    margin-top: 5%;
+}
+
+.services h2 {
+    font-size: 2.7rem;
+}
+
+.services p {
+    font-size: 1.2rem;
+}
+
+.services-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.services-container .service-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 1.3rem;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+}
+
+.service-card .img img {
+    border-radius: 100%;
+    background: rgb(244, 242, 242);
+    padding: 30px;
+}
+
+.service-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.top-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.top-heading p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* desgining feature */
+.products {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #F5F7FA;
+    padding: 3rem;
+    align-items: center;
+}
+
+.product-cards-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+    /* <-- this is the key for spacing */
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+    background-color: white;
+
+}
+
+.product-card .img {
+    height: 50%;
+}
+
+.product-card .img img {
+    height: 90%;
+    width: 100%;
+}
+
+.product-card .text {
+    height: 50%;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-card .text .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card .text .footer-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Desining about -us Page */
+.about-us {
+    display: flex;
+}
+
+.about-section {
+    text-align: center;
+    padding: 60px 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.about-section .subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.feature-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+    min-width: 250px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.feature-card .icon {
+    font-size: 2rem;
+    background: #ffeae0;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.stats>div {
+    flex: 1 1 45%;
+    max-width: 45%;
+    min-width: 250px;
+    text-align: center;
+}
+
+.stats h3 {
+    color: #ff6b35;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.stats p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Button */
+.btn-wrapper {
+    margin-top: 20px;
+}
+
+.cta-btn {
+    padding: 14px 32px;
+    background-color: #1e2b3a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #16222c;
+}
+
+/* ✅ Responsive for Mobile */
+@media (max-width: 600px) {
+
+    .feature-card,
+    .stats>div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* designing the contact section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: #1e2b3a;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff6b35;
+}
+
+.submit-btn {
+    background-color: #ff6b35;
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e4572e;
+}
+
+
+/* Desingning th efooter */
+.footer {
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 60px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1 1 250px;
+}
+
+.footer h3,
+.footer h4 {
+    color: #ff6b35;
+    margin-bottom: 15px;
+}
+
+.footer p,
+.footer a {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+    will-change: transform, opacity;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content-provides ul li a {
+    text-decoration: none;
+    color: #e4572e;
+
+}
+
+.content-provides ul li a.active {
+    border-bottom: 2px solid #e4572e;
+    color: black;
+}
